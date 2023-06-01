@@ -1,12 +1,12 @@
 # Sage WooCommerce
 
-Add WooCommerce support to Sage 10.
+Add WooCommerce support to Sage 10 or Radicle.
 
 ## Installation
 
 Install the composer package.
 
-    composer require generoi/sage-woocommerce
+    composer require sequelagency/sage-woocommerce
 
 Add the package to the cached package manifest.
 
@@ -15,10 +15,6 @@ Add the package to the cached package manifest.
 Publish the required `single-product.blade.php` and `archive-product.blade.php` views.
 
     wp acorn vendor:publish --tag="WooCommerce\ Templates"
-
-Optionally publish a commented out `app/wc-template-hooks.php` file for customizing the WC template hooks.
-
-    wp acorn vendor:publish --tag="WooCommerce\ Template\ Hook\ Overrides"
 
 By default your theme has now declared WooCommerce support. To add support for specific features, add them to your `app/setup.php`
 

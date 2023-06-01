@@ -22,14 +22,6 @@ class WooCommerce
     }
 
     /**
-     * Load template hook overrides file if available in app/ folder of theme.
-     */
-    public function loadThemeTemplateHooks()
-    {
-        locate_template('app/wc-template-hooks.php', true, true);
-    }
-
-    /**
      * Declare theme support.
      */
     public function addThemeSupport(): void
